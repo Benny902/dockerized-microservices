@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "4f6bdc31-21b4-4749-a79a-b8f929f53c9e",
+		"name": "task3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "23825542"
+	},
+	"item": [
+		{
+			"name": "order_pizza",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pizza_type\": \"Thin Crust\",\r\n    \"toppings\": \"Extra Cheese, Tuna, Olives\",\r\n    \"quantity\": 2,\r\n    \"price\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/order"
+			},
+			"response": []
+		},
+		{
+			"name": "accept_order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pizza_type\": \"Thin Crust\",\r\n    \"toppings\": \"Extra Cheese, Tuna, Olives\",\r\n    \"quantity\": 2,\r\n    \"price\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/accept_order/1"
+			},
+			"response": []
+		},
+		{
+			"name": "accept_all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pizza_type\": \"Thin Crust\",\r\n    \"toppings\": \"Extra Cheese, Tuna, Olives\",\r\n    \"quantity\": 2,\r\n    \"price\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/accept_all"
+			},
+			"response": []
+		},
+		{
+			"name": "show_pizza",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/order/1"
+			},
+			"response": []
+		},
+		{
+			"name": "update_pizza",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pizza_type\": \"Thin Crust\",\r\n    \"toppings\": \"Extra Cheese, Tuna, Olives\",\r\n    \"quantity\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/order/1"
+			},
+			"response": []
+		},
+		{
+			"name": "show_pizza_after_update",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/order/1"
+			},
+			"response": []
+		},
+		{
+			"name": "delete_pizza",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:5000/order/1"
+			},
+			"response": []
+		},
+		{
+			"name": "show_pizza_after_delete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/order/1"
+			},
+			"response": []
+		},
+		{
+			"name": "show_all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/orders"
+			},
+			"response": []
+		},
+		{
+			"name": "show_menu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/pizzamenu"
+			},
+			"response": []
+		}
+	]
+}
