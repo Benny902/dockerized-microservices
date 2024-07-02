@@ -1,6 +1,6 @@
 # dockerized-microservices
-## implementing multiple services using different programming languages for each service, also including MongoDB as database and RabbitMQ for managing queues
 
+## the goal of this project was to learn and show how three services communicate between each other regardless of their programming language, also including MongoDB as database and intergrating RabbitMQ for managing queues, and finally dockerize the project using docker-compose.
 
 i have created three backend services, a main service (service A) that the user can interact with services B and C.  
 service B with python: place_order, get_order, get_all_orders, update_order, delete_order.  
